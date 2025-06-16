@@ -3,136 +3,150 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Cinema RD</title>  
+    <title>Formulario de Solicitud de Servicios</title>  
     <link rel="stylesheet" href="index.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="icon" href="img/claro.jpeg" type="image/x-icon">
+
 </head>  
 <body>  
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">  
-        <!-- Sidebar -->  
-        <aside class="sidebar">  
-            <div class="logo">  
-                <img src="img/logo.jpeg" alt="Cinema RD Logo">  
-                <span>Cinema RD</span>  
+        <h1>Solicitud de Servicios Claro Latinoamérica</h1>  
+        <form action="#" method="post">  
+            <div class="form-group">  
+                <label for="primerNombre">Primer Nombre:</label>  
+                <input type="text" id="primerNombre" name="primerNombre" required>  
             </div>  
-            <nav>  
-                <ul>  
-                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>  
-                    <li><a href="#"><i class="fas fa-film"></i> Películas</a></li>  
-                    <li><a href="#"><i class="fas fa-tv"></i> Series</a></li>  
-                </ul>  
-            </nav>  
-        </aside>  
 
-        <!-- Main Content -->  
-        <main class="main-content">  
-            <!-- Carrusel de Estrenos -->  
-            <section class="featured-movies">  
-                <h2>ESTRENOS RECIENTES</h2>  
-                <div class="marquee-container">  
-                    <div class="marquee-content">  
-                        <div class="estreno-container">  
-                            <img src="img/Apocalipsis_Z.jpg" alt="Apocalipsis Z">  
-                            <p>Apocalipsis Z</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/El_Mito_Bourne.jpg" alt="El Mito Bourne">  
-                            <p>El Mito Bourne</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Espia_como_puedas.jpg" alt="Espía como puedas">  
-                            <p>Espía como puedas</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/John_Wick_1.jpg" alt="John Wick 1">  
-                            <p>John Wick 1</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/John_Wick_2.jpg" alt="John Wick 2">  
-                            <p>John Wick 2</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/John_Wick_3.jpg" alt="John Wick 3">  
-                            <p>John Wick 3</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/John_Wick_4.jpg" alt="John Wick 4">  
-                            <p>John Wick 4</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Kraven_el_cazador.jpg" alt="Kraven el cazador">  
-                            <p>Kraven el cazador</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/La_busqueda.jpg" alt="La Búsqueda">  
-                            <p>La Búsqueda</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Linterna_verde.jpg" alt="Linterna Verde">  
-                            <p>Linterna Verde</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/ninja 2.jpg" alt="Ninja 2">  
-                            <p>Ninja 2</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Sonido_de_libertad.jpg" alt="Sonido de Libertad">  
-                            <p>Sonido de Libertad</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Spider-Man_Lotus.jpg" alt="Spider-Man Lotus">  
-                            <p>Spider-Man Lotus</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Starship_Troopers.jpg" alt="Starship Troopers">  
-                            <p>Starship Troopers</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/SWAT.jpg" alt="SWAT">  
-                            <p>SWAT</p>  
-                        </div>  
-                        <div class="estreno-container">  
-                            <img src="img/Tirador.jpg" alt="Tirador">  
-                            <p>Tirador</p>  
-                        </div>  
-                    </div>  
-                </div>  
-            </section>  
-            <br><br>
+            <div class="form-group">  
+                <label for="segundoNombre">Segundo Nombre:</label>  
+                <input type="text" id="segundoNombre" name="segundoNombre">  
+            </div>  
 
-            <!-- Sección de Películas -->  
-            <section class="movies">  
-                <h2>PELÍCULAS</h2>  
-                <div class="grid-container">  
-                    <img src="img/Al_filo_del_mañana.jpg" alt="Al Filo del Mañana">  
-                    <img src="img/Beekeeper.jpg" alt="Beekeeper">  
-                    <img src="img/Black_clover.jpg" alt="Black Clover">  
-                    <img src="img/Blue_Beetle.jpg" alt="Blue Beetle">  
-                    <img src="img/Code_8.jpg" alt="Code 8">  
-                    <img src="img/Code_8_2.jpg" alt="Code 8 2">  
-                    <img src="img/Daredevil.jpg" alt="Daredevil">  
-                    <img src="img/El_gran_torneo.jpg" alt="El Gran Torneo">   
+            <div class="form-group">  
+                <label for="primerApellido">Primer Apellido:</label>  
+                <input type="text" id="primerApellido" name="primerApellido" required>  
+            </div>  
 
-                </div>  
-            </section>  
-            <br><br>
-    <br><br>
-    <!-- Footer -->  
-    <footer class="footer">  
-        <p>© 2025 Cinema RD. Todos los derechos reservados.</p>  
-    </footer>  
+            <div class="form-group">  
+                <label for="segundoApellido">Segundo Apellido:</label>  
+                <input type="text" id="segundoApellido" name="segundoApellido">  
+            </div>  
 
-    <!-- Script para el carrusel -->  
-    <script>  
-        const marqueeContent = document.querySelector('.marquee-content');  
+            <div class="form-group">  
+                <label for="sexo">Sexo:</label>  
+                <select id="sexo" name="sexo">  
+                    <option value="masculino">Masculino</option>  
+                    <option value="femenino">Femenino</option>  
+                    <option value="otro">Otro</option>  
+                </select>  
+            </div>  
 
-        marqueeContent.addEventListener('mouseenter', () => {  
-            marqueeContent.style.animationPlayState = 'paused';  
-        });  
+            <div class="form-group">  
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>  
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>  
+            </div>  
 
-        marqueeContent.addEventListener('mouseleave', () => {  
-            marqueeContent.style.animationPlayState = 'running';  
-        });  
-    </script>  
+            <div class="form-group">  
+                <label for="ciudadNacimiento">Ciudad de Nacimiento:</label>  
+                <input type="text" id="ciudadNacimiento" name="ciudadNacimiento" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="provincia">Provincia (República Dominicana):</label>  
+                <select id="provincia" name="provincia">  
+                    <option value="Azua">Azua</option>  
+                    <option value="Bahoruco">Bahoruco</option>  
+                    <!-- Agrega aquí las 32 provincias de RD -->  
+                </select>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="paisOrigen">País de Origen:</label>  
+                <select id="paisOrigen" name="paisOrigen">  
+                    <option value="Argentina">Argentina</option>  
+                    <option value="Bolivia">Bolivia</option>  
+                    <!-- Agrega aquí todos los países de Latinoamérica -->  
+                </select>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="estadoCivil">Estado Civil:</label>  
+                <select id="estadoCivil" name="estadoCivil">  
+                    <option value="soltero">Soltero/a</option>  
+                    <option value="casado">Casado/a</option>  
+                    <option value="divorciado">Divorciado/a</option>  
+                    <option value="viudo">Viudo/a</option>  
+                </select>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="numeroCedula">Número de Cédula:</label>  
+                <input type="text" id="numeroCedula" name="numeroCedula" pattern="[0-9]{3}-[0-9]{7}-[0-9]{1}" placeholder="Ej: 000-0000000-0" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="numeroCelular">Número de Celular:</label>  
+                <input type="tel" id="numeroCelular" name="numeroCelular" placeholder="Ej: 809-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="telefonoTrabajo">Teléfono del Trabajo:</label>  
+                <input type="tel" id="telefonoTrabajo" name="telefonoTrabajo" placeholder="Ej: 809-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">  
+            </div>  
+
+            <div class="form-group">  
+                <label for="correoElectronico">Correo Electrónico:</label>  
+                <input type="email" id="correoElectronico" name="correoElectronico" required>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="servicioSolicitar">Servicio a Solicitar:</label>  
+                <select id="servicioSolicitar" name="servicioSolicitar">  
+                    <option value="internetMovil">Internet Móvil</option>  
+                    <option value="internetFijo">Internet Fijo</option>  
+                    <option value="fibraOptica">Fibra Óptica</option>  
+                </select>  
+            </div>  
+
+            <div class="form-group">  
+                <label for="imagen">Subir Imagen:</label>  
+                <input type="file" id="imagen" name="imagen" accept="image/*">  
+            </div>  
+
+            <div class="form-group">  
+                <label for="observaciones">Observaciones:</label>  
+                <textarea id="observaciones" name="observaciones" rows="4"></textarea>  
+            </div>  
+
+            <div class="form-buttons">  
+                <button type="submit">Enviar</button>  
+                <button type="reset">Limpiar</button>  
+            </div>  
+        </form>  
+    </div>  
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Claro Latinoamérica. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Política de Privacidad</a></li>
+                <li><a href="terms.html">Términos y Condiciones</a></li>
+                <li><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>  
-</html>  
+</html>
