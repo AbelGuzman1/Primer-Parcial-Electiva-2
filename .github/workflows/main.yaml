@@ -1,0 +1,27 @@
+name: Deploy to Surge.sh
+
+on:
+  push:
+    branches:
+      - main # Ejecuta el workflow cuando haya un push en la rama 'main'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Ejecuta el job en un ambiente Linux
+
+    steps:
+      - name: Checkout code # Paso 1: Descarga tu código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js # Paso 2: Configura Node.js, necesario para Surge
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Puedes ajustar la versión de Node.js si es necesario
+
+      - name: Install Surge CLI # Paso 3: Instala Surge globalmente en el entorno de GitHub Actions
+        run: npm install -g surge
+
+      - name: Deploy to Surge.sh # Paso 4: Despliega tu proyecto usando Surge
+        run: surge ./ --token ${{ secrets.SURGE_TOKEN }} --domain ${{ env.SURGE_DOMAIN }}
+        env:
+          SURGE_DOMAIN: abelguzman-primer-parcial.surge.sh # ¡Dominio asignado!
